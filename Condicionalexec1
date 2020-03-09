@@ -2,15 +2,18 @@ using System;
 //1.Implementeumprogramaquerecebe3númerosdousuárioeinformaomaiordeles.
 class MainClass {
   public static void Main (string[] args) {
-    //Informa numeros para programa 
+   
+   //Informa numeros para programa 
     Console.WriteLine ("Informe 3 numeros ");
     int numero1 = int.Parse(Console.ReadLine());
     int numero2 = int.Parse(Console.ReadLine());
     int numero3 = int.Parse(Console.ReadLine());
+    
     // logica da condicional if (Se)
     if((numero1 >= numero2)&&(numero1 >= numero3)){
       // a condicional so entrar se o primeiro numero for maior que todos 
       Console.WriteLine("O maior numero é: {0}",numero1);
+    
     }else if (numero2 >= numero3){
       //so entrar na condicional se o segundo numero for maior 
       Console.WriteLine("O maior numero é: {0}",numero2);
