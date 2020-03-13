@@ -1,0 +1,30 @@
+using System;
+/*Exercícios2.Implemente um programa que recebe uma frase como entrada(string) e caso a frase seja alguma das 5frases escolhidas(você pode de finir quais as frases)informe ao usuário que ele acertou*/
+class MainClass {
+  public static void Main (string[] args) {
+    //Implemente um programa que recebe uma frase como entrada(string)
+    Console.WriteLine ("Digite a sua Frase que podera se selecionada.");
+    string frase =Console.ReadLine();
+    // caso a frase seja alguma das 5frases escolhidas
+    switch (frase){
+      case "Eu estudo muito" :
+      Console.WriteLine("Voce acertou a Frase");
+      break;
+      case "Eu amo Churrasco" :
+      Console.WriteLine("Amiseravel acertou");
+      break;
+      case "Vou sempre a Faculdade" :
+      Console.WriteLine("Continue assim");
+      break;
+      case "Amo a minha escolhas" :
+      Console.WriteLine("Amar nem sempre ajuda");
+      break;
+      case "Consigo tudo que Deus me consede" :
+      Console.WriteLine("Fé nele e se dedique muito");
+      break;
+      default:
+      Console.WriteLine("Informe a Frase Correta.");
+      break;
+    }
+  }
+}
