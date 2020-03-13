@@ -1,0 +1,41 @@
+using System;
+/*Exercícios3.Melhore o  código do programa acima permitindo que o usuário participe do “jogo”  de adivinhação apenas se  for maior de idade e se for estudante e se for do curso de análise e desenvolvimento de sistemas.–Useif’s aninhados e switch’spara resolver o problema.*/
+class MainClass {
+  public static void Main (string[] args) {
+    //Implemente um programa que recebe uma frase como entrada(string)
+    Console.WriteLine("Ola Usuario  Informe Seu Nome e Idade; Se for estudante Digite 'S' Para sim ou 'N' para Não e Informe qual curso ?");
+    //Declaração das Variaveis
+    string nome = Console.ReadLine();
+    int Idade = int.Parse(Console.ReadLine());
+    string opcao = Console.ReadLine();
+    string curso = Console.ReadLine();
+// Condicional para acessar o Programa
+    if ((Idade >=18 && opcao == "S")&&curso == "ADS"){
+      Console.WriteLine ("Digite a sua Frase que podera se selecionada.");
+      string frase =Console.ReadLine();
+      // caso a frase seja alguma das 5frases escolhidas
+      switch (frase){
+      case "Eu estudo muito" :
+      Console.WriteLine("Voce acertou a Frase");
+      break;
+      case "Eu amo Churrasco" :
+      Console.WriteLine("Amiseravel acertou");
+      break;
+      case "Vou sempre a Faculdade" :
+      Console.WriteLine("Continue assim");
+      break;
+      case "Amo a minha escolhas" :
+      Console.WriteLine("Amar nem sempre ajuda");
+      break;
+      case "Consigo tudo que Deus me consede" :
+      Console.WriteLine("Fé nele e se dedique muito");
+      break;
+      default:
+      Console.WriteLine("Informe a Frase Correta.");
+      break;
+    }
+
+    }
+    
+  }
+}
